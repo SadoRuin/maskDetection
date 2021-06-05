@@ -18,7 +18,7 @@ var _storage = multer.diskStorage({
   filename: function(req, file, cb) {
     const output = Date.now() + '-' + file.originalname
     cb(null, output)
-    spawn('python', ['./maskdetective/detect.py', '--project', 'views/runs', '--name', 'exp', '--exist-ok', '--source', 'uploads/'+output, '--img-size', '320', '--conf', '0.4', '--weights', './maskdetective/weights/best.pt'])
+    spawn('python3', ['./maskdetective/detect.py', '--project', 'views/runs', '--name', 'exp', '--exist-ok', '--source', 'uploads/'+output, '--img-size', '320', '--conf', '0.4', '--weights', './maskdetective/weights/best.pt'])
     uploadfile = output
   }
 })
@@ -36,14 +36,14 @@ app.post('/upload', upload.single('upload-img'), function(req, res) {
   const filePath = path.join(__dirname, "./views/runs/exp/", uploadfile)
   console.log(filePath)
 
-  // 파일처리 때문에 9초 대기
+  // 파일처리 때문에 7초 대기
   setTimeout( function() {
     fs.readFile(filePath, (err, data)=> {
       if (err) throw err
       console.log(data)
       res.end(data)
     })
-  }, 9000)
+  }, 11000)
 })
 
 var server = app.listen(3000, function() {
