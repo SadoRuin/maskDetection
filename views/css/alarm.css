@@ -1,0 +1,42 @@
+/* .alarm {
+  visibility: hidden;
+} */
+@import "loading.css";
+
+@keyframes withoutMask {
+  0% {
+    background-color: #ff4949;
+  }
+
+  100% {
+    background-color: #ffd1d1;
+  }
+}
+
+@keyframes withMask {
+  0% {
+    background-color: #83ff49;
+  }
+
+  100% {
+    background-color: #cfffb9;
+  }
+}
+
+.without-mask {
+  animation-name: withoutMask;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.with-mask {
+  animation-name: withMask;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.hidden {
+  visibility: hidden;
+}

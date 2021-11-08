@@ -1,0 +1,40 @@
+#video,
+#canvas {
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+#canvas {
+  border: 2px solid white;
+}
+
+#video {
+  margin-right: 10px;
+}
+
+.web-cam {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.web-cam__display {
+  margin-bottom: 20px;
+}
+
+.web-cam__button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.web-cam__button button:first-child {
+  margin-right: 10px;
+}
+
+.web-cam__button-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}

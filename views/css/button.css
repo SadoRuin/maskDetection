@@ -1,0 +1,45 @@
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+button.button {
+  width: 180px;
+  height: 48px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #0066ff;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 2;
+  text-align: center;
+  transition: opacity 100ms ease-in-out, color 100ms ease-in-out,
+    background-color 100ms ease-in-out;
+}
+
+.web-cam__button button.upload-button {
+  width: 370px;
+  margin-right: 0;
+}
+
+button:focus,
+button:active,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  box-shadow: none;
+  outline: none;
+}
+
+button.button:hover {
+  opacity: 0.8;
+}
+
+button.button:active {
+  color: #fff;
+  background-color: #ffc82c;
+  opacity: 1;
+}

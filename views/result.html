@@ -1,0 +1,45 @@
+<!-- test code -->
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+
+    <title>Mask Detective1</title>
+    <style></style>
+  </head>
+  <body class="img-body">
+    <div class="title">
+      <!-- <div id="loading" class=""></div> -->
+
+      <a href="./"
+        ><h1><i class="fas fa-arrow-left"></i></h1
+      ></a>
+      <p>Your picture seems to be wrong.<br />Please try again.</p>
+    </div>
+    <div class="image">
+      <img src="./runs/exp/${fileName}" />
+    </div>
+    <input type="hidden" value="${fileName}" />
+  </body>
+  <script src="detectWaringMask.js"></script>
+</html>

@@ -1,0 +1,85 @@
+/* color 
+ * #ff4949 RED
+ * #ffc82c YELLOW
+ * #0066ff BLUE
+ * #009EEB BLUE2
+ * #1fb6ff BLUE3
+ * #7e5bef VIOLET
+ * #E5EAEF GREY
+ * #525d69 DARKGREY
+*/
+
+@import "main.css";
+@import "cam.css";
+@import "cam-interactive.css";
+@import "image.css";
+@import "alarm.css";
+@import "title.css";
+@import "button.css";
+@import "button-interactive.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: #ffeeee;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+  transition: color 100ms ease-in-out;
+  margin-bottom: 5px;
+  padding: 10px 25px;
+}
+
+h1:active {
+  color: #136191;
+}
+
+p {
+  font-size: 30px;
+}
+
+h1 i {
+  font-size: 70px;
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  h1 i {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 1030px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 25px;
+  }
+
+  h1 i {
+    font-size: 60px;
+  }
+}
