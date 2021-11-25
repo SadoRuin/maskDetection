@@ -110,7 +110,7 @@ app.post("/upload", upload.single("upload-img"), function (req, res) {
             ></script>
             <link rel="stylesheet" href="css/styles.css" type="text/css" />
         
-            <title>Mask Detective1</title>
+            <title>Mask Detective</title>
           </head>
           <body>
             <div class="title">
@@ -210,7 +210,7 @@ app.post("/upload_c", function (req, res) {
               <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
               <link rel="stylesheet" href="css/styles.css" type="text/css" />
           
-              <title>Mask Detective1</title>
+              <title>Mask Detective</title>
               <style></style>
             </head>
             <body class="">
